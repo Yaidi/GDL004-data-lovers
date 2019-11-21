@@ -5,12 +5,12 @@ import POKEMON from './data/pokemon/pokemon.js'
 
 import { name } from './data.js';
 
-console.log(example);
+console.log(name); 
 
 
 console.log(POKEMON);
  /* console.log(LoL);
  * console.log(POTTER)
 */
-document.getElementById('acces').addEventListener('click',)
+document.getElementById('acces').addEventListener('click', ) 
 document.getElementById('instruction').addEventListener('click')
