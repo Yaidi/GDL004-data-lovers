@@ -27,5 +27,5 @@ export const grass = () => {
 };
 function createPokemon(){
 
-
+let name= "hola";
 };
