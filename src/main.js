@@ -1,12 +1,15 @@
 import POKEMON from './data/pokemon/pokemon.js'
+console.log(POKEMON)
  /* import LoL from './data/lol/lol.js'
  * import POTTER from './data/potter/potter.js'
  */
+//import { dataPokemon } from './main.js';
 
 import { name } from './data.js';
 import {height} from './data.js';
 import { grass } from './data.js';
-export const dataPokemon = POKEMON;
+//export const dataPokemon = POKEMON;
+//console.log(dataPokemon)
  /* console.log(LoL);
  * console.log(POTTER)
 */
@@ -19,4 +22,7 @@ function move(){
 
 }
 document.getElementById("heights").addEventListener('click', height);
-document.getElementById("grass").addEventListener('click', grass);
+document.getElementById("grass").addEventListener('click', () => {
+    console.log(grass(POKEMON))
+    
+});
