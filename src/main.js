@@ -11,6 +11,15 @@ import { name, height, water, fire, flying, grass } from './data.js';
  /* console.log(LoL);
  * console.log(POTTER)
 */
+
+function ocultar(){
+ document.getElementById("welcomePage").style.display='none'; 
+ document.getElementById("menu").style.display='block'; 
+};
+
+document.getElementById("acces").addEventListener('click',ocultar)
+ 
+
 document.getElementById("names").addEventListener('click', name);
 /*document.getElementById('acces').addEventListener('click', move);*/
 document.getElementById('instruction').addEventListener("click", seeInstruction)
