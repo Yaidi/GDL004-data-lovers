@@ -9,6 +9,7 @@ export const name = () => {
 //  for(let i=0; i < dataPokemon.name.length; i++){
   /*let getNames = dataPokemon.map(function(x){
     return x.name*/
+
   let names = dataPokemon.filter(dataPokemon => dataPokemon.name = dataPokemon.name);
     console.log(names);
     createPokemon()

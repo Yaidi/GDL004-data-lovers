@@ -1,11 +1,23 @@
 body {
     background-image: url("https://thumbs.gfycat.com/IncompatibleHonoredEidolonhelvum-size_restricted.gif");
-    position:absolute;
-    
-    color: rgb(0, 0, 0);
-    font: 800;
     color: aliceblue;
-    
-
 }
-/*justinmind */ 
+
+.conteiner {
+    width: 1000%;
+    max-width: 1000px;
+    margin: 0% auto; 
+    overflow: hidden; 
+}
+
+.acces {
+
+    width: 200%;
+    max-width: 400px;
+    margin: 0% auto; 
+}
+
+#menu{
+    display : none
+}
+
