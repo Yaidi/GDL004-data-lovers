@@ -1,33 +1,25 @@
 body {
-    background-image: url("https://thumbs.gfycat.com/IncompatibleHonoredEidolonhelvum-size_restricted.gif");
-    position:absolute;
-
-    color: rgb(0, 0, 0);
-    font: arial;
+    background-image: url("https://thumbs.gfycat.com/TerrificLightheartedGermanspaniel-small.gif");
+    font: medium;
+    font-size: 150%;
     color: aliceblue;
-
-
 }
 #conteiner {
-  display: -webkit-flex;
-  display: -ms-flexbox;
+ 
   display: flex;
   flex-wrap:wrap;
   align-content: center;
 }
-/*justinmind 
-    color: aliceblue;
-}*/
 
 .conteiner {
-    width: 1000%;
-    max-width: 1000px;
+    width: 100% ;
+    max-width: 100px;
     margin: 0% auto; 
     overflow: hidden; 
 }
 
 .acces {
-
+    display: flexbox;
     width: 200%;
     max-width: 400px;
     margin: 0% auto; 
