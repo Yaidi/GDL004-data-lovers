@@ -4,21 +4,17 @@ import POKEMON from './data/pokemon/pokemon.js'
  */
 //import { dataPokemon } from './main.js';
 
-import { name, height, water, fire, flying, grass } from './data.js';
-
-//export const data = POKEMON;
-//console.log(dataPokemon)
- /* console.log(LoL);
- * console.log(POTTER)
-*/
-
+import { name, height, water, fire, flying, grass, ice, poison, psychic } from './data.js';
+/*function clean(){
+document.getElementById('conteiner') = 0;
+}*/
 function ocultar(){
- document.getElementById("welcomePage").style.display='none'; 
- document.getElementById("menu").style.display='block'; 
+ document.getElementById("welcomePage").style.display='none';
+ document.getElementById("menu").style.display='block';
 };
 
 document.getElementById("acces").addEventListener('click',ocultar)
- 
+
 
 document.getElementById("names").addEventListener('click', name);
 /*document.getElementById('acces').addEventListener('click', move);*/
@@ -49,6 +45,7 @@ document.getElementById('Grass').addEventListener('click', () => {
 })
 
 function seePokemonWater(){
+//  clean();
   let waterArray = water(POKEMON);
     waterArray.map((pokemon)=> {
 
@@ -62,33 +59,40 @@ function seePokemonWater(){
     }
   )}
   function seePokemonFire(){
+  //  clean();
     let fireArray = fire(POKEMON);
-    console.log(fireArray);
       fireArray.map((pokemon)=> {
 
         let target = document.createElement("div");
         const template = `
-        <span class= "name"> ${pokemon.name}</span>
+        <article class="pokemon">
+        <span class= "name" align="center"> ${pokemon.name}</span>
+        <br>
         <input type=image class="img" src= "${pokemon.img}";/>
+        </article>
         `
         target.innerHTML = template;
         document.getElementById("conteiner").appendChild(target);
       }
     )}
     function seePokemonFlying(){
+      //clean();
       let flyingArray = flying(POKEMON);
         flyingArray.map((pokemon)=> {
 
           let target = document.createElement("div");
           const template = `
+          <article class="pokemon">
           <span class= "name"> ${pokemon.name}</span>
           <input type=image class="img" src= "${pokemon.img}";/>
+          </article>
           `
           target.innerHTML = template;
           document.getElementById("conteiner").appendChild(target);
         }
       )}
       function seePokemonGrass(){
+      //  clean();
         let grassrArray = grass(POKEMON);
           grassrArray.map((pokemon)=> {
 

@@ -1,12 +1,17 @@
 body {
-    background-image: url("https://thumbs.gfycat.com/IncompatibleHonoredEidolonhelvum-size_restricted.gif");
-    position:absolute;
+    background-image: url("https://thumbs.gfycat.com/TerrificLightheartedGermanspaniel-small.gif");
+    background-position: center center;
+   font-family: fantasy;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
 
-    color: rgb(0, 0, 0);
-    font: arial;
-    color: aliceblue;
 
-
+}
+@media only screen and (max-width: 767px) {
+  body {
+  background-image: url("https://thumbs.gfycat.com/TerrificLightheartedGermanspaniel-small.gif");
+  }
 }
 #conteiner {
   display: -webkit-flex;
@@ -15,25 +20,34 @@ body {
   flex-wrap:wrap;
   align-content: center;
 }
-/*justinmind 
+/*justinmind
     color: aliceblue;
 }*/
 
-.conteiner {
-    width: 1000%;
-    max-width: 1000px;
-    margin: 0% auto; 
-    overflow: hidden; 
+conteiner {
+    width: 100%;
+    margin: 20% auto;
+    overflow: hidden;
+    height: auto;
 }
 
-.acces {
-
-    width: 200%;
-    max-width: 400px;
-    margin: 0% auto; 
+header {
+    margin: 0% auto;
+    width:80%;
+   max-width:400%;
+   height: auto;
+}
+#instruction{
+width: 16%;
 }
 
 #menu{
     display : none
 }
+.pokemon{
+  height: 100%;
+  width: 100%;
 
+background: rgba(255, 255, 255, 0.35);
+border: 1px solid #000000;
+box-sizing: border-box;}

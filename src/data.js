@@ -14,21 +14,36 @@ export const height = (data) => {
 
 export const water = (data) => {
   return data.filter((pokemon) => {
-    return pokemon.type[0] === 'Water' || pokemon.type[1] === "Water";
+    return pokemon.type[0] === 'Water' || pokemon.type[1] === 'Water';
   })
 }
 export const fire = (data) => {
   return data.filter((pokemon) => {
-    return pokemon.type[0] === 'Fire' || pokemon.type[1] === "Fire";
+    return pokemon.type[0] === 'Fire' || pokemon.type[1] === 'Fire';
   })
 }
 export const flying = (data) => {
   return data.filter((pokemon) => {
-    return pokemon.type[0] === 'Flying' || pokemon.type[1] === "Flying";
+    return pokemon.type[0] === 'Flying' || pokemon.type[1] === 'Flying';
   })
 }
 export const grass = (data) => {
   return data.filter((pokemon) => {
-    return pokemon.type[0] === 'Grass' || pokemon.type[1] === "Grass";
+    return pokemon.type[0] === 'Grass' || pokemon.type[1] === 'Grass';
+  })
+}
+export const ice = (data) => {
+  return data.filter((pokemon) => {
+    return pokemon.type[0] === 'Ice' || pokemon.type[1] === 'Ice';
+  })
+}
+export const poison = (data) => {
+  return data.filter((pokemon) => {
+    return pokemon.type[0] === 'Poison' || pokemon.type[1] === 'Poison';
+  })
+}
+export const psychic = (data) => {
+  return data.filter((pokemon) => {
+    return pokemon.type[0] === 'Psychic' || pokemon.type[1] === 'Psychic';
   })
 }
