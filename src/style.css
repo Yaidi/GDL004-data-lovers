@@ -1,14 +1,16 @@
 body {
     background-image: url("https://thumbs.gfycat.com/TerrificLightheartedGermanspaniel-small.gif");
-    background-position: center center;
+  
    font-family: fantasy;
-   background-repeat: no-repeat;
-   background-attachment: fixed;
+   color: aliceblue; 
    background-size: cover;
-
+}
+.diplay{
+  
 
 }
-@media only screen and (max-width: 767px) {
+
+@media only screen and (max-width: 567px) {
   body {
   background-image: url("https://thumbs.gfycat.com/TerrificLightheartedGermanspaniel-small.gif");
   }
@@ -61,3 +63,4 @@ box-sizing: border-box;
   style="color:#FF0000";
 
 }
+box-sizing: border-box;} 
