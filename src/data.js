@@ -1,13 +1,12 @@
 //import { data } from './main.js';
 export const name = (data) => {
   let names = data.filter(pokemon => data.name = data.name);
-  return names
-    createPokemon()
-};
+  return names;
+  //  createPokemon(name())
+  };
 export const height = (data) => {
   let heights = data.filter(pokemon => data.height = data.height);
   return heights
-  createPokemon()
 };
 
 //let value= JSON.parse(localStorage.getItem("typesValue"));
@@ -48,12 +47,6 @@ export const poison = (data) => {
 export const psychic = (data) => {
   return data.filter((pokemon) => {
     return pokemon.type[0] === 'Psychic' || pokemon.type[1] === 'Psychic';
-  })
-};
-
-export const poison = (data) => {
-  return data.filter((pokemon) => {
-    return pokemon.type[0] === 'Poison' || pokemon.type[1] === "Poison";
   })
 };
 
@@ -101,6 +94,6 @@ export const ghost = (data) => {
 
 export const dragon = (data) => {
   return data.filter((pokemon) => {
-    return pokemon.type[0] === 'Dragon' || pokemon.type[1] === "Dragon"; 
+    return pokemon.type[0] === 'Dragon' || pokemon.type[1] === "Dragon";
   })
-}; 
+};

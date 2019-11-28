@@ -14,15 +14,11 @@ body {
   }
 }
 #conteiner {
- 
+
   display: flex;
   flex-wrap:wrap;
   align-content: center;
 }
-/*justinmind
-    color: aliceblue;
-}*/
-
 conteiner {
     width: 100%;
     margin: 20% auto;
@@ -42,24 +38,26 @@ width: 16%;
 .conteiner {
     width: 100% ;
     max-width: 100px;
-    margin: 0% auto; 
-    overflow: hidden; 
+    margin: 0% auto;
+    overflow: hidden;
 }
 
-.acces {
+#acces {
     display: flexbox;
     width: 200%;
     max-width: 400px;
-    margin: 0% auto; 
+    margin: 0% auto;
 }
 
 #menu{
-    display : none
+    display : none;
 }
 .pokemon{
-  height: 100%;
-  width: 100%;
-
 background: rgba(255, 255, 255, 0.35);
 border: 1px solid #000000;
-box-sizing: border-box;}
+box-sizing: border-box;
+}
+.name{
+  style="color:#FF0000";
+
+}
