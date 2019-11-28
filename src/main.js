@@ -17,7 +17,7 @@ function ocultar(){
  document.getElementById("menu").style.display='block';
 };
 
-document.getElementById("acces").addEventListener('click',ocultar)
+document.getElementById("acces").addEventListener('click',ocultar); 
 
 document.getElementById("names").addEventListener('click', name);
 /*document.getElementById('acces').addEventListener('click', move);*/

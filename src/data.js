@@ -48,7 +48,6 @@ export const psychic = (data) => {
     return pokemon.type[0] === 'Psychic' || pokemon.type[1] === 'Psychic';
   })
 };
-
 export const ground = (data) => {
   return data.filter((pokemon) => {
     return pokemon.type[0] === 'Ground' || pokemon.type[1] === "Ground";
