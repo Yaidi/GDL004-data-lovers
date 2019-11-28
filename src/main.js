@@ -31,7 +31,7 @@ document.getElementById('heights').addEventListener('click', height);
 //.addEventListener('click', water);
 
 let typesValue = document.getElementById('types').value;
-console.log(typesValue)
+console.log(typesValue);
 localStorage.setItem("typesValue", JSON.stringify(typesValue));
 
 document.getElementById('Water').addEventListener('click', () => {
@@ -278,9 +278,10 @@ function seePokemonWater(){
 
 
 
-  function createPokemon(filtro){
+  function createPokemon(){
   document.getElementById('conteiner').innerHTML= "";
-  let array = (filtro)(POKEMON);
+  let array = name(POKEMON);
+  array.map((pokemon) =>{
     let target = document.createElement("div");
     const template = `
     <span class= "name"> ${pokemon.name}</span>
@@ -288,4 +289,4 @@ function seePokemonWater(){
     `
     target.innerHTML = template;
     document.getElementById('conteiner').appendChild(target);
-  }
+  })

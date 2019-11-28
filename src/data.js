@@ -1,15 +1,14 @@
-//import { data } from './main.js';
 export const name = (data) => {
-  let names = data.filter(pokemon => data.name = data.name);
-  return names;
-  //  createPokemon(name())
+  console.log(data);
+  let getNames = data.name;
+  return getNames.sort();
   };
 export const height = (data) => {
   let heights = data.filter(pokemon => data.height = data.height);
   return heights
 };
 
-//let value= JSON.parse(localStorage.getItem("typesValue"));
+let value= JSON.parse(localStorage.getItem("typesValue"));
 
 export const water = (data) => {
   return data.filter((pokemon) => {
@@ -82,7 +81,7 @@ export const normal = (data) => {
 
 export const fighting = (data) => {
   return data.filter((pokemon) => {
-    return pokemon.type[0] === 'Fighting' || pokemon.type[1] === "Fingtong";
+    return pokemon.type[0] === 'Fighting' || pokemon.type[1] === "Fighting";
   })
 };
 
