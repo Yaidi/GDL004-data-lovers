@@ -11,7 +11,7 @@ import { name, height, water, fire, flying, grass, poison, ground, rock, electri
  /* console.log(LoL);
  * console.log(POTTER)
 */
-//--- Funcion para ocultar la pagina de Bienvenida--- // 
+//--- Funcion para ocultar la pagina de Bienvenida--- //
 function ocultar(){
  document.getElementById("welcomePage").style.display='none';
  document.getElementById("menu").style.display='block';
@@ -82,6 +82,7 @@ function seePokemonWater(){
       let target = document.createElement("div");
       const template = `
       <span class= "name"> ${pokemon.name}</span>
+      <br>
       <input type=image class="img" src= "${pokemon.img}";/>
       `
       target.innerHTML = template;
@@ -114,6 +115,7 @@ function seePokemonWater(){
           const template = `
           <article class="pokemon">
           <span class= "name"> ${pokemon.name}</span>
+          <br>
           <input type=image class="img" src= "${pokemon.img}";/>
           </article>
           `
@@ -128,8 +130,11 @@ function seePokemonWater(){
 
             let target = document.createElement("div");
             const template = `
-            <span class= "name"> ${pokemon.name}</span>
+            <article class='pokemon'>
+            <span class= 'name'> ${pokemon.name}</span>
+            <br>
             <input type=image class="img" src= "${pokemon.img}";/>
+            </article>
             `
             target.innerHTML = template;
             document.getElementById('conteiner').appendChild(target);
@@ -139,7 +144,7 @@ function seePokemonWater(){
           document.getElementById('conteiner').innerHTML= '';
           let poisonArray = poison(POKEMON);
           poisonArray.map((pokemon)=> {
-        
+
               let target = document.createElement("div");
               const template = `
               <span class= "name"> ${pokemon.name}</span>
@@ -153,7 +158,7 @@ function seePokemonWater(){
             document.getElementById('conteiner').innerHTML= '';
             let groundArray = ground(POKEMON);
               groundArray.map((pokemon)=> {
-          
+
                 let target = document.createElement("div");
                 const template = `
                 <span class= "name"> ${pokemon.name}</span>
@@ -167,7 +172,7 @@ function seePokemonWater(){
               document.getElementById('conteiner').innerHTML= '';
               let rockArray = rock(POKEMON);
                 rockArray.map((pokemon)=> {
-            
+
                   let target = document.createElement("div");
                   const template = `
                   <span class= "name"> ${pokemon.name}</span>
@@ -181,7 +186,7 @@ function seePokemonWater(){
                 document.getElementById('conteiner').innerHTML= '';
                 let electricArray = electric(POKEMON);
                   electricArray.map((pokemon)=> {
-              
+
                     let target = document.createElement("div");
                     const template = `
                     <span class= "name"> ${pokemon.name}</span>
@@ -195,11 +200,14 @@ function seePokemonWater(){
                   document.getElementById('conteiner').innerHTML= '';
                   let bugArray = bug(POKEMON);
                     bugArray.map((pokemon)=> {
-                
+
                       let target = document.createElement("div");
                       const template = `
+                      <div class='pokemon'>
+                      <br>
                       <span class= "name"> ${pokemon.name}</span>
                       <input type=image class="img" src= "${pokemon.img}";/>
+                      </div>
                       `
                       target.innerHTML = template;
                       document.getElementById("conteiner").appendChild(target);
@@ -209,11 +217,14 @@ function seePokemonWater(){
                     document.getElementById('conteiner').innerHTML= '';
                     let normalArray = normal(POKEMON);
                       normalArray.map((pokemon)=> {
-                  
+
                         let target = document.createElement("div");
                         const template = `
+                        <div class='pokemon'>
+                        <br>
                         <span class= "name"> ${pokemon.name}</span>
                         <input type=image class="img" src= "${pokemon.img}";/>
+                        </div>
                         `
                         target.innerHTML = template;
                         document.getElementById("conteiner").appendChild(target);
@@ -223,11 +234,13 @@ function seePokemonWater(){
                       document.getElementById('conteiner').innerHTML= '';
                       let fightingArray = fighting(POKEMON);
                         fightingArray.map((pokemon)=> {
-                    
+
                           let target = document.createElement("div");
                           const template = `
+                          <article class='pokemon'>
                           <span class= "name"> ${pokemon.name}</span>
                           <input type=image class="img" src= "${pokemon.img}";/>
+                          </article>
                           `
                           target.innerHTML = template;
                           document.getElementById("conteiner").appendChild(target);
@@ -237,7 +250,7 @@ function seePokemonWater(){
                         document.getElementById('conteiner').innerHTML= '';
                         let ghostArray = ghost(POKEMON);
                           ghostArray.map((pokemon)=> {
-                      
+
                             let target = document.createElement("div");
                             const template = `
                             <span class= "name"> ${pokemon.name}</span>
@@ -251,10 +264,11 @@ function seePokemonWater(){
                           document.getElementById('conteiner').innerHTML= '';
                           let dragonArray = dragon(POKEMON);
                             dragonArray.map((pokemon)=> {
-                        
+
                               let target = document.createElement("div");
                               const template = `
-                              <span class= "name"> ${pokemon.name}</span>
+                              <span class= "name" style="color:#FF0000;"> ${pokemon.name}</span>
+                              <br>
                               <input type=image class="img" src= "${pokemon.img}";/>
                               `
                               target.innerHTML = template;
@@ -264,8 +278,9 @@ function seePokemonWater(){
 
 
 
-  function createPokemon(){
-  //  document.getElementById('conteiner') = '';
+  function createPokemon(filtro){
+  document.getElementById('conteiner').innerHTML= "";
+  let array = (filtro)(POKEMON);
     let target = document.createElement("div");
     const template = `
     <span class= "name"> ${pokemon.name}</span>
