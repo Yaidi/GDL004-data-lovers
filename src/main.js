@@ -10,11 +10,10 @@ function ocultar(){
 
 document.getElementById("acces").addEventListener('click',ocultar);
 
-document.getElementById("names").addEventListener('click', name(POKEMON));
 
-document.getElementById('instruction').addEventListener("click", seeInstruction)
-function seeInstruction()
-{document.getElementById("textInstruction").innerHTML = "Hello World!";};
+document.getElementById('instruction').addEventListener('click', () => {
+  document.getElementById('textInstruction').style.display = 'block';
+});
 
 document.getElementById('Water').addEventListener('click', (e) => {
   seePokemon(e.target.value);
@@ -69,6 +68,8 @@ array.map((pokemon) =>{
   <p> Id: ${pokemon.id} </p>
   <br>
   <p> Type: ${pokemon.type} </p>
+  <br>
+  <p> Debilidades: ${pokemon.weaknesses} </p>
   <br>
   <p> Dulces para evolucionar: ${pokemon.candy_count} </p>
   <br>

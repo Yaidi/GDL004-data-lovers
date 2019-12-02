@@ -1,5 +1,5 @@
 export const name = (data) => {
-  let acomodar = data.sort(function (a, b) {
+ data.sort(function (a, b) {
     if (a.name > b.name) {
       return 1;
     }
@@ -9,7 +9,6 @@ export const name = (data) => {
     return 0;
   });
 
-  console.log(name);
   };
 
 export const types = (Pokemon, value) => {
