@@ -11,7 +11,9 @@ import { name, height, water, fire, flying, grass, poison, ground, rock, electri
  /* console.log(LoL);
  * console.log(POTTER)
 */
+
 //--- Funcion para ocultar la pagina de Bienvenida--- //
+
 function ocultar(){
  document.getElementById("welcomePage").style.display='none';
  document.getElementById("menu").style.display='block';
@@ -27,12 +29,35 @@ function seeInstruction()
 /*function move(){
 
 }*/
+
+
 document.getElementById('heights').addEventListener('click', height);
 //.addEventListener('click', water);
 
 let typesValue = document.getElementById('types').value;
 console.log(typesValue)
 localStorage.setItem("typesValue", JSON.stringify(typesValue));
+
+
+function buscar(){
+  document.getElementById('conteiner').innerHTML= '';
+  let buscador = name(POKEMON);
+    buscador.map((pokemon)=> {
+
+      let target = document.createElement("div");
+      const template = `
+      <span class= "name"> ${pokemon.name}</span>
+      <br>
+      <input type=image class="img" src= "${pokemon.img}";/>
+      `
+      target.innerHTML = template;
+      document.getElementById("conteiner").appendChild(target);
+    }
+  )}
+  
+
+
+
 
 document.getElementById('Water').addEventListener('click', () => {
   seePokemonWater();
