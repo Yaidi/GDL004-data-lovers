@@ -1,11 +1,66 @@
 body {
-    background-image: url("https://thumbs.gfycat.com/IncompatibleHonoredEidolonhelvum-size_restricted.gif");
-    position:absolute;
-    
-    color: rgb(0, 0, 0);
-    font: 800;
-    color: aliceblue;
-    
+    background-image: url("https://thumbs.gfycat.com/TerrificLightheartedGermanspaniel-small.gif");
+
+   font-family: fantasy;
+   color: aliceblue;
+   background-size: cover;
+}
+
+.hidden {
+  display: none;
+  background: rgba(255, 255, 255, 0.35);
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  text-align: center;
 
 }
-/*justinmind */ 
+
+@media only screen and (max-width: 567px) {
+  body {
+  background-image: url("https://thumbs.gfycat.com/TerrificLightheartedGermanspaniel-small.gif");
+  }
+}
+#conteiner {
+
+  display: flex;
+  flex-wrap:wrap;
+  align-content: center;
+}
+conteiner {
+    width: 100%;
+    margin: 20% auto;
+    overflow: hidden;
+    height: auto;
+}
+
+header {
+    margin: 0% auto;
+    width:80%;
+   max-width:400%;
+   height: auto;
+}
+#instruction{
+width: 16%;
+
+.conteiner {
+    width: 100% ;
+    max-width: 100px;
+    margin: 0% auto;
+    overflow: hidden;
+}
+
+#acces {
+    display: flexbox;
+    width: 200%;
+    max-width: 400px;
+    margin: 0% auto;
+}
+
+#menu{
+    display : none;
+}
+.pokemon{
+background: rgba(255, 255, 255, 0.35);
+border: 1px solid #000000;
+box-sizing: border-box;
+}
