@@ -41,12 +41,13 @@ header {
 }
 #instruction{
 width: 16%;
-
-.conteiner {
+}
+#showPokemon{
     width: 100% ;
     max-width: 100px;
-    margin: 0% auto;
+    padding: 50px;
     overflow: hidden;
+    text-decoration: none;
 }
 
 #acces {
@@ -59,8 +60,12 @@ width: 16%;
 #menu{
     display : none;
 }
+
 .pokemon{
 background: rgba(255, 255, 255, 0.35);
 border: 1px solid #000000;
 box-sizing: border-box;
+}
+audio{
+  display: inline;
 }

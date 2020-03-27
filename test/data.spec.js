@@ -3,11 +3,11 @@ import { example } from "../src/data";
 
 describe('example', () => {
 
-  it('debería ser una función', () => {
-    expect(typeof example).toBe('function');
-  });
+    it('types', () => {
+        expect(typeof example).toBe('Water');
+    });
 
-  describe('example', () => {
-    // escribe aquí tu test
-  });
+    describe('example', () => {
+        test(filterNames(search))
+    });
 });
