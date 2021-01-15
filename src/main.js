@@ -3,6 +3,7 @@ import POKEMON from './data/pokemon/pokemon.js'
 import { name, types} from './data.js';
 
 //--- Funcion para ocultar la pagina de Bienvenida--- //
+
 function ocultar(){
  document.getElementById("welcomePage").style.display='none';
  document.getElementById("menu").style.display='block';
